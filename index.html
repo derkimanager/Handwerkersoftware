@@ -5,28 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handwerkersoftware Vergleichsportal</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Work+Sans:400,500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Handwerkersoftware Vergleichsportal</h1>
-    </nav>
     <div class="hero">
-      <h2>Die beste Handwerkersoftware für Ihr Handwerk</h2>
-      <p>Vergleichen Sie Anbieter und finden Sie die optimale Lösung für Ihren Betrieb.</p>
+      <div class="hero-content">
+        <h1>Handwerkersoftware Vergleichsportal</h1>
+        <p>Finden Sie die beste Software für Ihren Betrieb – einfach, schnell, unabhängig.</p>
+        <a href="#tabelle" class="btn-primary">Jetzt vergleichen</a>
+      </div>
     </div>
   </header>
   <main>
-    <section class="hero">
-      <h2>Finden Sie die beste Handwerkersoftware für Ihr Unternehmen</h2>
-      <p>Vergleichen Sie verschiedene Anbieter und finden Sie die passende Lösung für Ihre Anforderungen.</p>
+    <section class="cta-section">
+      <p>✅ Testsieger 2025 – Robaws</p>
+      <a href="robaws.html" class="btn-primary">Jetzt kostenlose Robaws-Demo anfordern</a>
     </section>
-    <section class="vergleich2">
-      <h3>Vergleichstabelle: Cloud-Handwerkersoftware</h3>
-      <div class="cta-section">
-        <p>✅ Testsieger 2025 – Robaws</p>
-        <a href="robaws.html" class="btn-primary">Jetzt kostenlose Robaws-Demo anfordern</a>
-      </div>
+    <section id="tabelle" class="vergleich2">
+      <h2>Vergleichstabelle: Cloud-Handwerkersoftware</h2>
       <div class="table-responsive">
         <table>
           <thead>
@@ -38,13 +35,13 @@
               <th><abbr title="Wie gut ist das Preis-Leistungs-Verhältnis?">Preis-Leistung</abbr></th>
               <th><abbr title="Wie schnell und zuverlässig ist der Support?">Support</abbr></th>
               <th><abbr title="Schnittstellen zu anderen Systemen">Integration</abbr></th>
-              <th><abbr title="Wie gut ist die mobile Nutzung möglich?">Mobil</abbr></th>
-              <th><abbr title="Wie sicher sind die Daten und Zugriffe?">Sicherheit</abbr></th>
+              <th><abbr title="Mobilnutzung, Apps, responsive Design">Mobil <span aria-label="Handy">📱</span></abbr></th>
+              <th><abbr title="Wie sicher sind die Daten und Zugriffe?">Sicherheit <span aria-label="Schloss">🔒</span></abbr></th>
             </tr>
           </thead>
           <tbody>
             <tr class="winner row-highlight" onclick="window.location='details/robaws.html'" style="cursor:pointer">
-              <td><img src="assets/images/robaws.jpeg" alt="Robaws Logo" class="logo"></td>
+              <td><span aria-label="Sieger" title="Testsieger" style="font-size:1.5em;">🥇</span><img src="assets/images/robaws.jpeg" alt="Robaws Logo" class="logo"></td>
               <td><a href="https://robaws.com/de" target="_blank" rel="noopener" onclick="event.stopPropagation()">Robaws</a></td>
               <td><span class="stars" data-value="5"></span></td>
               <td><span class="stars" data-value="5"></span></td>
@@ -171,7 +168,8 @@
     </section>
     <section class="testimonials">
       <blockquote>
-        „Mit Robaws sparen wir 20 % Zeit bei der Einsatzplanung“ – Malerbetrieb Schmidt
+        „Mit Robaws sparen wir 20 % Zeit bei der Einsatzplanung“<br>
+        <span class="testimonial-author">– Malerbetrieb Schmidt</span>
       </blockquote>
     </section>
   </main>
