@@ -31,8 +31,9 @@ header h1 {
   letter-spacing: 1px;
 }
 .hero {
-  background: #e3f2fd;
-  padding: 2rem 1rem;
+  background: url('/assets/images/hero.jpg') center/cover;
+  color: #fff;
+  padding: 4rem 1rem;
   text-align: center;
 }
 .vergleich {
@@ -71,6 +72,16 @@ footer {
   overflow-x: auto;
   max-width: 100%;
 }
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+}
 .logo {
   width: 48px;
   height: 48px;
@@ -104,6 +115,21 @@ footer {
   font-size: 1.08em;
   box-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
 }
+.star-5 { background-color: #e0f7fa; }
+.star-4 { background-color: #f1f8e9; }
+.star-3 { background-color: #fffde7; }
+.star-2 { background-color: #ffebee; }
+.cta-section { text-align: center; margin: 2rem 0; }
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+.btn-primary:hover { background-color: #0056b3; }
+.testimonials { background: #f9f9f9; padding: 2rem; margin-top: 2rem; border-left: 4px solid #007bff; }
+blockquote { font-style: italic; margin: 0; }
 @media (max-width: 900px) {
   table {
     min-width: 600px;
