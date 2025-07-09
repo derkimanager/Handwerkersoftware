@@ -9,3 +9,23 @@ document.addEventListener('DOMContentLoaded', function() {
     starEl.textContent = stars;
   });
 }); 
+document.getElementById('col-selector').addEventListener('change', e => {
+  const selected = Array.from(e.target.selectedOptions).map(opt => opt.value);
+  const colMap = {
+    'funktionsumfang': 2,
+    'benutzerfreundlichkeit': 3,
+    'preis-leistung': 4,
+    'support': 5,
+    'integration': 6,
+    'mobil': 7,
+    'sicherheit': 8
+  };
+  Object.entries(colMap).forEach(([key, idx]) => {
+    const show = selected.includes(key);
+    document.querySelectorAll('tr').forEach(row => {
+      if (row.children[idx]) {
+        row.children[idx].style.display = show ? '' : 'none';
+      }
+    });
+  });
+}); 

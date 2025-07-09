@@ -1,10 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-  color: #222;
-}
+body { font-size: 16px; line-height: 1.5; color: #333; background: #fff; }
 header {
   background: url('assets/images/header-bg.jpg') center center/cover no-repeat, #00334a;
   position: relative;
@@ -49,6 +43,7 @@ table {
   border-collapse: collapse;
   margin-top: 1rem;
   min-width: 800px;
+  font-size: 0.9rem;
 }
 th, td {
   border: 1px solid #ddd;
@@ -130,6 +125,9 @@ table thead th {
 .btn-primary:hover { background-color: #0056b3; }
 .testimonials { background: #f9f9f9; padding: 2rem; margin-top: 2rem; border-left: 4px solid #007bff; }
 blockquote { font-style: italic; margin: 0; }
+abbr { border-bottom: 1px dotted; cursor: help; }
+.row-highlight { background: #fffbea; border: 2px solid gold; }
+.row-highlight:hover { box-shadow: 0px 4px 8px rgba(0,0,0,0.1); }
 @media (max-width: 900px) {
   table {
     min-width: 600px;

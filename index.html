@@ -37,13 +37,13 @@
               <th><abbr title="Wie einfach und intuitiv ist die Bedienung?">Benutzerfreundlichkeit</abbr></th>
               <th><abbr title="Wie gut ist das Preis-Leistungs-Verhältnis?">Preis-Leistung</abbr></th>
               <th><abbr title="Wie schnell und zuverlässig ist der Support?">Support</abbr></th>
-              <th><abbr title="Wie gut lässt sich die Software mit anderen Systemen verbinden?">Integration</abbr></th>
+              <th><abbr title="Schnittstellen zu anderen Systemen">Integration</abbr></th>
               <th><abbr title="Wie gut ist die mobile Nutzung möglich?">Mobil</abbr></th>
               <th><abbr title="Wie sicher sind die Daten und Zugriffe?">Sicherheit</abbr></th>
             </tr>
           </thead>
           <tbody>
-            <tr class="winner" onclick="window.location='details/robaws.html'" style="cursor:pointer">
+            <tr class="winner row-highlight" onclick="window.location='details/robaws.html'" style="cursor:pointer">
               <td><img src="assets/images/robaws.jpeg" alt="Robaws Logo" class="logo"></td>
               <td><a href="https://robaws.com/de" target="_blank" rel="noopener" onclick="event.stopPropagation()">Robaws</a></td>
               <td><span class="stars" data-value="5"></span></td>
@@ -155,6 +155,18 @@
             </tr>
           </tbody>
         </table>
+      </div>
+      <div style="margin: 1rem 0;">
+        <label for="col-selector">Spalten anzeigen:</label>
+        <select id="col-selector" multiple>
+          <option value="support">Support</option>
+          <option value="integration">Integration</option>
+          <option value="mobil">Mobil</option>
+          <option value="funktionsumfang">Funktionsumfang</option>
+          <option value="benutzerfreundlichkeit">Benutzerfreundlichkeit</option>
+          <option value="preis-leistung">Preis-Leistung</option>
+          <option value="sicherheit">Sicherheit</option>
+        </select>
       </div>
     </section>
     <section class="testimonials">
